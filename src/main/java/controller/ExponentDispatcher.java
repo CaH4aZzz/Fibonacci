@@ -1,4 +1,7 @@
+package controller;
+
 import constants.Messages;
+import view.ConsoleWorker;
 
 import java.io.BufferedReader;
 import java.io.IOException;

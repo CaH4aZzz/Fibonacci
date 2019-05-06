@@ -1,3 +1,5 @@
+package controller;
+
 import constants.Exceptions;
 
 public class Validator {

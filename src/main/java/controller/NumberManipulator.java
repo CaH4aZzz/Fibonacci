@@ -1,3 +1,5 @@
+package controller;
+
 public class NumberManipulator {
 
     public double getExponentialValue(double base, int exponent){
