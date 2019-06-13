@@ -15,6 +15,10 @@ public class ConsoleWorker {
         System.out.println(message);
     }
 
+    public void print(Exception e){
+        System.out.println(e.getMessage());
+    }
+
     public String getInput() throws IOException {
         return reader.readLine();
     }

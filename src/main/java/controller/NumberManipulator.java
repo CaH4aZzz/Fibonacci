@@ -2,7 +2,7 @@ package controller;
 
 public class NumberManipulator {
 
-    public double getExponentialValue(double base, int exponent){
+    public double getExponentialValue(int base, int exponent){
 
         double result;
         if (exponent < 0){
@@ -13,11 +13,10 @@ public class NumberManipulator {
         return result;
     }
 
-    private double calculation(double base, int exponent){
+    private double calculation(int base, int exponent){
         if (exponent == 0){
             return 1;
         }
-
         return base * getExponentialValue(base, exponent - 1);
     }
 }
