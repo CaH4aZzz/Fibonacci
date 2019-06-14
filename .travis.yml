@@ -19,5 +19,5 @@ notifications:
     recipients:
       - CaH4aZzz@ua.fm
       - CaH4aZzz@gmail.com
-    on_success: never
+    on_success: always
     on_failure: always
