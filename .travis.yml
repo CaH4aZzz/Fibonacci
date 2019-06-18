@@ -10,10 +10,12 @@ script:
 after_script:
   - echo "Script finished"
 after_success:
-  - echo "Build was successful.
+  - echo "Build was successful"
   - bash <(curl -s https://codecov.io/bash)
 after_failure:
   - echo "Build was failed"
+
+
 
 notifications:
   email:
@@ -22,3 +24,9 @@ notifications:
       - CaH4aZzz@gmail.com
     on_success: always
     on_failure: always
+
+    deploy:
+      provider: heroku
+      app: "maybe-dp-163"
+      api_key:
+        secure: "0b981f92-ceeb-435e-9104-5afed9f9a3d5"
