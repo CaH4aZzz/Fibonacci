@@ -5,7 +5,7 @@ jdk:
 before_script:
   - echo "Starting build"
 script:
-#  - mvn clean package
+  - "mvn clean package"
   - "mvn cobertura:cobertura"
 after_script:
   - echo "Script finished"

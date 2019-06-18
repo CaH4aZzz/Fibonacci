@@ -22,4 +22,8 @@ public class ConsoleWorker {
     public String getInput() throws IOException {
         return reader.readLine();
     }
+
+    public void printHello(){
+        System.out.println("Hello");
+    }
 }
