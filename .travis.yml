@@ -6,12 +6,12 @@ jdk:
   cache:
     directories:
       - $HOME/.m2
-      -
+
 before_script:
   - echo "Starting build"
 
 script:
-  -mvn clean test jacoco:report
+  -mvn clean install
 
 after_script:
   - echo "Script finished"
